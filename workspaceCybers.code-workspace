@@ -2,7 +2,15 @@
 	"folders": [
 		{
 			"path": "Cybers\\webCoffee"
+		},
+		{
+			"path": "Cybers\\demoCSS"
+		},
+		{
+			"path": "Cybers\\InteriorDesign"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "demoCSS"
+	}
 }

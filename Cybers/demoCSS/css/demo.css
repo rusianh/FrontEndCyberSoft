@@ -1,0 +1,50 @@
+/* ?h1 là selector, text align là property, center là value */
+/* tagname */
+h1{
+    text-align: center;
+}
+
+/* class name */
+.heading2,p{
+    background-color: green;
+}
+
+/* id: khong duoc dat trung ten id cac tag */
+#title2{
+    color: white;
+}
+
+/* ?Chỉ định nghia cho thẻ con p trong thẻ cha .section */
+.section1 p{
+    font-size: 30px;
+}
+
+/* ?Chỉ áp dụng khi p là thẻ con trực tiếp của .section1 */
+.section1 > p{
+
+}
+
+/* ?Chỉ định thẻ cháu span trong thẻ ông .section */
+.section1 span{
+    color: red;
+}
+
+/* ? * chỉ tất cả các thẻ */
+*{
+    font-weight: bold; /* ?font-weight:độ đậm của chữ */
+}
+
+/* ?Chỉ chỉ định thẻ h3 là thẻ đồng cấp gần nhất ngay sau thẻ div */
+div + h3{
+    background-color: palegoldenrod;
+}
+
+/* ?Chỉ định tất cả các thẻ h3 đồng cấp và nằm sau thẻ div*/
+div ~ h3{
+    color: blue;
+}
+
+/* ?Chỉ định thẻ p có class .section1 | */
+p[class="section1"]{
+    background-color: violet;
+}

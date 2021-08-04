@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Coffee </title>
+</head>
+
+<body>
+    <!-- Tiêu đề website  -->
+    <h1 style="color:bisque; background-color: red; text-align: center;"> WELLCOM TO THE COFFEE HOUSE</h1>
+    <hr size="5px" noshade=""> <!-- ?chỉ có hr mơi có thuộc tính size và noshade (Không đổ bóng) -->
+
+    <!-- Khu vực của thẻ liên kết -->
+    <!-- Thẻ liên kết nội -->
+    <a href="mailto:webcoffee.gmail.com">Mail</a> <!-- ?Liên kết email -->
+    <a href="tel:0888849689">Phone</a> <!-- ?Liên kết gọi -->
+    <a href="#coffee" >Clink để tìm hiểu về Coffee</a>
+    <a href="#tea">Click vào đây để tìm hiểu về tea</a> 
+    <hr size="5px" noshade="">
+    <h2 style="text-align: center;" id="coffee">Coffee</h2>
+    <p style="color: brown;">
+        <!-- ?Lorem để dùng font mặc định -->
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        <br>
+        <i>
+            Voluptatum, provident architecto labore sed accusantium itaque ipsam magni asperiores. 
+        Atque eos quaerat maxime corrupti explicabo, sapiente dolores, fugiat fuga debitis eligendi ipsa ipsum tenetur 
+        tempore exercitationem ipsam praesentium consequatur rem reiciendis omnis nam. <br>
+        </i>
+        <b>
+            Animi mollitia pariatur dolore iste. <br> <br>
+        </b>
+        Quibusdam, rerum voluptates, illum vero itaque culpa reprehenderit iste exercitationem placeat qui perferendis asperiores,  
+        <span style="color: blue;">
+            nesciunt magnam.
+        </span> <!-- ? Thẻ span thường lồng vào bên trong dùng để tạo một kiểu chữ khác hoàn toàn so với kiểu con lại -->
+        Aspernatur ratione autem nulla modi iste fuga suscipit quisquam quia, eos incidunt dolorem dignissimos ex cum? Sit nesciunt, esse tenetur delectus provident illo distinctio ipsa at dolorem explicabo error corrupti maiores suscipit necessitatibus accusantium non. Vero, magni.
+    </p>
+    <hr size="5px" noshade="">
+
+    <!-- Vùng của coffee list -->
+    <h2>Coffee List </h2>
+    <!-- ?Danh sách không có thứ tự -->
+    <ul type="circle"> <!-- ? Ul có thêm type để thay đổi ký hiệu -->
+        <li>Traditionnal Coffee</li>
+        <li>Black Cooffe</li>
+        <li>Milk Coffee</li>
+    </ul>
+    <!-- ?Emmet ex: ul>li*3 -->
+    
+    <!-- Liên kết ngoại -->
+    <!-- ?Đường dẫn tuyệt đối và đường dẫn tương đối -->
+    <a href="./coffee/coffe.html" target="_blank">Xem Coffee Menu</a> <!-- ?_blank: mở liên kết trong 1 tab mới -->
+    <img src="./img/coffee.jpg" alt="coffee" style="width: 100%;"> <!-- ?Phải cho hình ảnh vừa với thẻ cha (Thẻ body) -> set width =100% -->
+
+    <hr size="5px" noshade="">
+    <h2 style="text-align: center;" id="tea">Tea</h2>
+    <p style="text-align: right; color: blue;" >
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> 
+    Dolorum sint nam animi numquam, nesciunt id hic ullam illum dicta, est omnis? Veniam assumenda soluta ab excepturi obcaecati sunt quisquam tempora vitae aspernatur recusandae eius, illo facilis molestias optio cumque autem odio molestiae, eaque doloremque dolorum. Expedita, officiis culpa neque error obcaecati et labore fuga sequi facilis, totam eos repudiandae. 
+    <br>Consequatur necessitatibus suscipit quibusdam molestiae vero eligendi voluptatibus earum provident, nobis voluptatem perspiciatis fuga delectus laborum quae id temporibus distinctio mollitia nemo officiis corporis cupiditate pariatur adipisci, nisi sit! Perferendis temporibus adipisci cum eveniet ipsum, tenetur quia, voluptatibus ducimus tempora dolorum non dignissimos officia odio, consequatur earum ratione fuga beatae accusamus neque. Repellat delectus quod incidunt perferendis id magnam sapiente labore vero accusantium ipsam impedit modi quisquam, consequatur illum porro voluptatem necessitatibus dolor tempore placeat ullam voluptates recusandae dolores. Esse ex beatae mollitia asperiores et blanditiis tempora laudantium. Mollitia eos perspiciatis rerum quia illum voluptas quibusdam aliquid pariatur voluptatibus voluptatem omnis recusandae, ipsam cumque odio nobis architecto velit. At doloribus molestias, commodi expedita dolorem voluptate dolorum voluptates modi id quae iure corporis possimus dolor architecto veniam quis consequuntur blanditiis eum rerum? Distinctio, quidem delectus? Tempore adipisci nobis reiciendis libero architecto molestias.
+    </p>
+    <hr size="5px" noshade="">
+    <!-- ?Danh sách có thứ tự -->
+    <ol type="I">
+        <li>Greean tea</li>
+        <li>Black Tea </li>
+        <li>Milk Tea</li>
+    </ol>
+    <a href="./tea/tea.html" target="_blank">Xem Tea Menu</a>
+    <img src="./img/Green-Tea.jpg" alt="Green-Tea" style="width: 100%;">
+</body>
+
+</html>
