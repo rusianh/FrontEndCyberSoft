@@ -8,9 +8,12 @@
 		},
 		{
 			"path": "Cybers\\InteriorDesign"
+		},
+		{
+			"path": "Cybers\\VUS"
 		}
 	],
 	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "InteriorDesign"
+		"liveServer.settings.multiRootWorkspaceName": "VUS"
 	}
 }
