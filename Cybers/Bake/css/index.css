@@ -1,0 +1,21 @@
+/* GLOBAL */
+/* ?Reset css -> xóa bỏ mặc định của trình duyệt */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Đảm bảo kích thước như khai báo ban đầu */
+}
+
+/* ?Khai bao kich thuoc chu */
+html{
+    font-size: 16px;
+}
+
+/* ?Khai báo mặc định cho trang web */
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: #212529;
+    background-color: #fff;
+    letter-spacing: 1px;
+
+}

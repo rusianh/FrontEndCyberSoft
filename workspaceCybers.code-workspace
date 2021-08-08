@@ -11,6 +11,9 @@
 		},
 		{
 			"path": "Cybers\\VUS"
+		},
+		{
+			"path": "Cybers\\Bake"
 		}
 	],
 	"settings": {
