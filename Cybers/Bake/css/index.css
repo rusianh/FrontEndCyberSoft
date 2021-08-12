@@ -526,3 +526,89 @@ header{
 .feedback__content .owl-theme .owl-dots .owl-dot:focus{
     outline: none; /* ?Tắt border mặc định của trình duyệt */
 }
+
+/* CONTACT */
+.contact{
+    padding: 70px 0;
+}
+
+.contact__form form{
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px 30px;
+}
+
+.contact__form textarea, .contact__form button{
+    grid-column: 1 / span 2;
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.contact__form input{
+    padding: 15px;
+    font-weight: 600;
+    font-size: 1rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+.contact__form input:focus{
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25); /* ? */
+
+}
+
+.contact__form textarea{
+    border: 1px solid black;
+    resize: none;
+}
+
+.contact__form textarea:focus{
+    outline: none;
+}
+
+.contact__form textarea::placeholder{
+    color: black;
+}
+
+.contact__form button{
+    border-radius: 0;
+    color: black;
+}
+
+.contact__form button:hover{
+    color: white;
+    background-color: black;
+    border-color: black;
+}
+
+.contact__map{
+    padding: 0 auto;
+    
+}
+.contact__map iframe{
+    display: block;
+    width: 90%;
+    margin: 70px auto;
+}
+
+.contact__info {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.contact__info i{
+    font-size: 2rem;
+    color: #4e2a84;
+}
+
+.contact__info p{
+    font-size: 0.8rem;
+    margin: 10px;
+}
