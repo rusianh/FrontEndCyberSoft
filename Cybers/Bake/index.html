@@ -33,13 +33,13 @@
         <div class="header__content">
             <p>BAKE</p>
             <nav>
-                <ul>
+                <ul id="mainNav">
                     <li class="active"><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">SERVICE</a></li>
-                    <li><a href="#">GALLERY</a></li>
-                    <li><a href="#">CLIENTS</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#intro">ABOUT</a></li>
+                    <li><a href="#service">SERVICE</a></li>
+                    <li><a href="#gallery">GALLERY</a></li>
+                    <li><a href="#feedback">CLIENTS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
                 </ul>
             </nav>
         </div>
@@ -57,7 +57,7 @@
     <!-- CAROUSEL END -->
 
     <!-- INTRO START -->
-    <section class="intro">
+    <section class="intro" id="intro">
         <div class="intro__item intro__text">
             <div>
                 <h3>Tradition</h3>
@@ -132,7 +132,7 @@
     <!-- NUMBER END -->
 
     <!-- SERVICE START -->
-    <section class="service">
+    <section class="service" id="service">
         <h2>OUR SERVICE</h2>
         <div class="service__content">
             <div class="service__item">
@@ -164,7 +164,7 @@
     <!-- SERVICE END -->
 
     <!-- GALERY START -->
-    <section class="gallery">
+    <section class="gallery" id="gallery">
         <h2>OUR GALLERY</h2>
         <div class="gallery__content">
             <figure class="gallery__item">
@@ -248,7 +248,7 @@
                     </div>
                 </div>
             </div>
-            <div class="team__item">
+            <div class="team__item team__item2">
                 <img src="./img/t2.jpg" alt="team 2">
                 <div class="team__title">
                     <h3>John Simon</h3>
@@ -338,7 +338,7 @@
     <!-- TEAM END -->
 
     <!-- FEEDBACK START -->
-    <section class="feedback">
+    <section class="feedback" id="feedback">
         <h2>TESTIMONIALS</h2>
         <div class="feedback__content">
             <div class="owl-carousel owl-theme">
@@ -366,7 +366,7 @@
     <!-- FEEDBACK END -->
 
     <!-- CONTACT START -->
-    <section class="contact">
+    <section class="contact" id="contact">
         <h2>CONTACT</h2>
         <div class="contact__form">
             <form action="">
@@ -474,7 +474,7 @@
     <!-- FOOTER END -->
 
     <!-- Back to top -->
-    <a href="#" class="backToTop">
+    <a href="#" class="backToTop cd-top text-replace js-cd-top">
         <i class="fa fa-angle-up"></i>
     </a>
     <!--Thu Vien JQUERY giup chay hieu ung  -->
@@ -495,7 +495,7 @@
 
     <!-- Owl Caroulsel Js -->
     <script src="./js/owl.carousel.min.js"></script>
-    <script>
+    <!-- <script>
         $('.owl-carousel').owlCarousel({
             loop: true,
             // margin: 10,
@@ -514,10 +514,29 @@
                 }
             }
         })
+    </script> -->
 
-    </script>
+     <!-- Back To Top -->
     <script src="./js/util.js"></script>
     <script src="./js/main-backToTop.js"></script>
+
+    <!--  Navigation Bar Js -->
+    <script>
+        // thẻ ul
+        var mainNav = document.getElementById("mainNav");
+        // các thẻ con li
+        var listNav = mainNav.getElementsByTagName("li");
+        for (var i = 0; i < listNav.length; i++){
+            listNav[i].addEventListener("click", function(){
+                //tìm thẻ đang được gắn class active
+                var current = document.querySelector("#mainNav .active")
+                // Xóa class active của thẻ đang gắn
+                current.className = current.className.replace("active","");
+                // Thêm class active cho thẻ li được click
+                this.className += "active";
+            })
+        }   
+    </script>
 </body>
 
 </html>

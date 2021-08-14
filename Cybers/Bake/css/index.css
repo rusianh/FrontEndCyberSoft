@@ -9,6 +9,7 @@
 /* ?Khai bao kich thuoc chu */
 html{
     font-size: 16px; /* ?Không khai báo font-size thì 1 rem có gt mặc định 16px */
+    scroll-behavior: smooth;
 }
 
 /* ?Khai báo mặc định cho trang web */
@@ -55,6 +56,9 @@ h2{
 header{
     background-color: #4e2a84;
     padding: 20px 0px;
+    position: fixed;
+    width: 100%;
+    z-index: 9999; /* ?Điển con số lớn để dễ kiểm soát */
 }
 
 .header__content{
@@ -121,6 +125,16 @@ header{
 .carousel__content p{
     font-size: 1.1rem;
     padding: 23px 0;
+}
+
+.carousel button:hover{
+    /* animation: name( ten key frame) | duration: Khoang tgian thuc hien 1chuky | timing-function: chuyen dong deu hay tuy chinh | delay iteration-count:Chu ky xay ra bnhieu lan | direction: fill-mode; */
+    /* animation: upDown 1s linear 0s infinite ; */
+    /* animation: upDown2 1s linear 0s infinite ; */
+}
+
+.carousel__content:hover button{
+    animation: upDown3 2s 1s backwards;
 }
 
 /* INTRO */
@@ -479,6 +493,25 @@ header{
     border-color: #ff0e83;
 }
 
+.team__item2{
+    overflow: hidden;
+    
+}
+
+.team__item2 .team__details{
+    opacity: 0;
+    /* transform: translateX(-100%); */
+    transform: translateY(-100%);
+    /* transform: rotate(90deg); */
+    /* transform: scale(0); */
+    transition: all 0.5s;
+}
+
+.team__item2:hover .team__details{
+    transform: translateX(0);
+    /* transform: scale(1); */
+}
+
 /* FEEDBACK */
 .feedback{
     background-image: url(../img/cc1.jpg);
@@ -708,6 +741,13 @@ footer{
     position: fixed;
     right: 50px;
     bottom: 50px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.cd-top--is-visible { 
+    visibility: visible;
+    opacity: 1;
 }
 
 .backToTop i{
@@ -719,4 +759,38 @@ footer{
     text-align: center;
     line-height: 36px;
     border-radius: 50%;
+}
+
+/* Khai báo chuỗi chuyển động */
+@keyframes upDown{
+    /* 100s */
+    0%{}
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes upDown2{
+    /* 100s */
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(50px);
+    }
+}
+
+@keyframes upDown3{
+    /* 100s */
+    0%{
+        transform: translateY(0);
+        background-color: red;
+    }
+    100%{
+        transform: translateY(50px);
+        background-color: yellow;
+    }
 }
