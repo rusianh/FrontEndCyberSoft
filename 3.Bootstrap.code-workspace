@@ -6,5 +6,8 @@
 		{
 			"path": "3.CybersBootstrap\\Instruction"
 		}
-	]
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Instruction"
+	}
 }
