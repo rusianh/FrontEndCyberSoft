@@ -1,6 +1,6 @@
 function DanhSachSinhVien() {
     this.danhSachSinhVien = [];
-    this.ThemSinhVien = function (sinhVienThem) {
+    this.themSinhVien = function (sinhVienThem) {
         this.danhSachSinhVien.push(sinhVienThem);
     }
     this.xoaSinhVien = function (listSVXoa) {

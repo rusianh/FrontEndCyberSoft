@@ -1,4 +1,4 @@
-function SinhVien(maSV,hoTen,email,soDT, cMND) {
+function SinhVien(maSV, hoTen, email, soDT, cMND) {
     this.maSV = maSV;
     this.hoTen = hoTen;
     this.email = email;
