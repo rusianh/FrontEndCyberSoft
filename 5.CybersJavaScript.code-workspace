@@ -2,9 +2,25 @@
 	"folders": [
 		{
 			"path": "5.CybersJavaScript\\demo"
+		},
+		{
+			"path": "5.CybersJavaScript\\DOM2"
+		},
+		{
+			"path": "5.CybersJavaScript\\DuAnTinhTienTip"
+		},
+		{
+			"path": "5.CybersJavaScript\\TinhTienUber"
+		},
+		{
+			"path": "5.CybersJavaScript\\JavascripOOP"
+		},
+		{
+			"path": "5.CybersJavaScript\\QuanLySinhVien"
 		}
 	],
 	"settings": {
-		"liveServer.settings.port": 5501
+		"liveServer.settings.port": 5501,
+		"liveServer.settings.multiRootWorkspaceName": "QuanLySinhVien"
 	}
 }

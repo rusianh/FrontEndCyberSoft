@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản Lý Sinh Viên - JS OOP</title>
+
+     <!-- Bootstrap 4.5 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- form nhập liệu thông tin sinh viên -->
+            <div class="col-6" >
+                <h3 class="display-4 text-center"> Quản Lý Sinh Viên</h3>
+                <div class="form-group">
+                    <p>Mã Sinh Viên</p>
+                    <input type="text" id="maSinhVien" class="form-control">
+                    <span class="text text-danger" id="error_maSinhVien_required"></span>
+                    <span class="text text-danger" id="error_maSinhVien_min_max_length"></span>
+                    <span class="text text-danger" id="error_maSinhVien_all_number"></span>
+
+                </div>
+                <div class="form-group">
+                    <p>Tên Sinh Viên</p>
+                    <input type="text" id="tenSinhVien" class="form-control">
+                    <span class="text text-danger" id="error_tenSinhVien_required"></span>
+                </div>
+                <div class="form-group">
+                    <p>Loại Sinh Viên</p>
+                    <select name="" id="loaiSinhVien" class="form-control">
+                        <option value="Chưa chọn loại Sinh Viên" disabled selected>Chọn loại Sinh Viên</option>
+                        <option value="Khó khăn">Khó khăn</option>
+                        <option value="Bình Thường">Bình Thường</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-4">
+                            <p>Điểm Toán</p>
+                            <input type="text" id="diemToan" class="form-control">
+                            <span class="text text-danger" id="error_diemToan_required"></span>
+                        </div>
+                        <div class="col-4">
+                            <p>Điểm Lý</p>
+                            <input type="text" id="diemLy" class="form-control">
+                            <span class="text text-danger" id="error_diemLy_required"></span>
+                        </div>
+                        <div class="col-4">
+                            <p>Điểm Hóa</p>
+                            <input type="text" id="diemHoa" class="form-control">
+                            <span class="text text-danger" id="error_diemHoa_required"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <p>Điểm Rèn Luyện</p>
+                    <input type="text" id="diemRenLuyen" class="form-control">
+                    <span class="text text-danger" id="error_diemRenLuyen_required"></span>
+                </div>
+                <div class="form-group text-center">
+                    <button class="btn btn-success" id="btnXacNhan"> Xác Nhận</button>
+                </div>
+            </div>
+            <div class="col-6">
+                <!-- Hiển thị thông tin sinh viên -->
+                <h3 class="text-center display-4">Thông Tin Sinh Viên</h3>
+                <p>Tên Sinh Viên: <span id="txtTenSinhVien" style="font-weight: bold;"></span></p>
+                <p>Mã Sinh Viên: <span id="txtMaSinhVien" style="font-weight: bold;"></span></p>
+                <p>Loai Sinh Viên: <span id="txtLoaiSinhVien" style="font-weight: bold;"></span></p>
+                <p>Điểm TB Sinh Viên: <span id="txtDiemTrugnBinhSinhVien" style="font-weight: bold;"></span></p>
+                <p>Xếp Loại Sinh Viên: <span id="txtXepLoaiSinhVien" style="font-weight: bold;"></span></p>
+            </div>
+        </div>
+    </div>
+
+    
+    
+    <!-- JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Bundle Js Bootstrap 4 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <!-- MAIN JS -->
+    <!-- <script src="./index.js"></script> -->
+    <script src="./models/Validation.js"></script>
+    <script src="./models/SinhVien.js"></script>
+    <script src="./jsOOP.js"></script>
+</body>
+</html>
