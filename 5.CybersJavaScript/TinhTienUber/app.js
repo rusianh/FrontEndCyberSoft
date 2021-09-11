@@ -85,7 +85,7 @@ function renderRowChiTietKm(loaiXe, arrayKm, arrayPrice, tblBody) {
         tdLoaiXe.innerHTML = loaiXe;
         tdSuDung.innerHTML = arrayKm[i] + " km";
         tdDonGia.innerHTML = arrayPrice[i];
-        tdThanhTien= arrayPrice[i]* arrayPrice[i];
+        tdThanhTien.innerHTML = arrayPrice[i]* arrayPrice[i];
 
         tr.appendChild(tdThanhTien);
         tr.appendChild(tdSuDung);
