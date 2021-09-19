@@ -2,6 +2,9 @@
 	"folders": [
 		{
 			"path": "6.JavascriptES6\\Demo"
+		},
+		{
+			"path": "6.JavascriptES6\\VirtualGlasses"
 		}
 	],
 	"settings": {}
