@@ -41,9 +41,9 @@ var city = "Hanoi";
  * !Arrow function
  * */
 //*ES6
-// let hello = (text) => {
-//     return "this is" + text;
-// }
+let hello = (text) => {
+    return "this is" + text;
+}
 //Chỉ có 1 tham số thì có thêm cách viết bỏ giấu ngoặc tròn
 // let hello = text => {
 //     return "this is" + text;
@@ -51,7 +51,7 @@ var city = "Hanoi";
 // chỉ có 1 lệnh return có thể bỏ dấu nhọn và từ khóa return
 // let hello = text => "this is" + text;
 
-// console.log(hello("call arow func"));
+console.log(hello("call arow func"));
 
 //Lỗi cú pháp
 // let hello = text => "Hello: " + text;

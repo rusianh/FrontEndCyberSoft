@@ -7,5 +7,7 @@
 			"path": "6.JavascriptES6\\VirtualGlasses"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Demo"
+	}
 }
