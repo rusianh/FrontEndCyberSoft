@@ -11,7 +11,7 @@
 // console.log(student.name, student.address);
 
 //!Extend - Tính kế thừa
-//*ES5
+//*ES5 Test
 function Father(name){
     this.name = name;
 }
