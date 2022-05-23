@@ -277,7 +277,7 @@ let b = 2;
 
 /**
  * !Object Literal
- * 
+ * Khai báo thuộc tính phương thức object ngắn hơn
  **/
 
 //*ES5
@@ -294,7 +294,7 @@ let b = 2;
 //*ES6
 // let namee = "Mị;"
 // let myObject = {
-//     namee,
+//     namee, // tên biến trùng nhau có thể viết gọn lại thành 1
 //     sayHi(){
 //         console.log("Hi my name is "+ namee);
 //     }
