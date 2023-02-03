@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
-
+/**
+ * Bài tập chọn xe
+ */
 export default class BaiTapChonXe extends Component {
     render() {
         return (
